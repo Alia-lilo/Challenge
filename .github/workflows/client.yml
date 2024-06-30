@@ -1,4 +1,4 @@
-name: Docker Build and Push - client
+name: Docker Build and Push - Client
 
 on:
   push:
@@ -19,11 +19,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push Docker image - client
-        env:
-          SERVICE_NAME: client
-          IMAGE_TAG: latest
+      - name: Build and push Docker image - Client
         run: |
-          docker-compose -f docker-compose.yml -f docker-compose.client.yml build
-          docker-compose -f docker-compose.yml -f docker-compose.client.yml push
+          docker-compose -f docker-compose.yml -f docker-compose.client.yml build client
+          docker-compose -f docker-compose.yml -f docker-compose.client.yml push client
 

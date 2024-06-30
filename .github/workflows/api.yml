@@ -1,4 +1,4 @@
-name: Docker Build and Push - api
+name: Docker Build and Push - API
 
 on:
   push:
@@ -19,11 +19,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push Docker image - api
-        env:
-          SERVICE_NAME: api
-          IMAGE_TAG: latest
+      - name: Build and push Docker image - API
         run: |
-          docker-compose -f docker-compose.yml -f docker-compose.api.yml build
-          docker-compose -f docker-compose.yml -f docker-compose.api.yml push
+          docker-compose -f docker-compose.yml -f docker-compose.api.yml build api
+          docker-compose -f docker-compose.yml -f docker-compose.api.yml push api
 
