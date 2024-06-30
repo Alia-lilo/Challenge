@@ -6,11 +6,12 @@ This repository contains a Dockerized setup for a web application with Laravel A
 
 ### Prerequisites
 
-- Docker and Docker Compose installed on your machine.
+- Docker and Docker Compose and Git installed on your machine.
 
 ### Clone the Repository
 
 Clone the repository to your local machine:
+https://github.com/Alia-lilo/Challenge
 
 ```bash
 git clone https://github.com/Alia-lilo/challenge.git
@@ -51,7 +52,7 @@ COMMANDS:
 SCREENSHOTS:
 ---------------
 
-- screenshot1 for running application.
+- ![screenshot1 for running application] (\Challenge\Screenshots)
 - screenshot3 for http://localhost " Welcome to nginx"
 - screenshot4 for Configuring the Nginx service to listen on port 443
 
