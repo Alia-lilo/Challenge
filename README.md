@@ -1,27 +1,66 @@
-# Challenge
+# Project Name
 
-## Overview
+This repository contains a Dockerized setup for a web application with Laravel API, Nuxt.js client, MySQL database, and Nginx proxy server.
 
-This repository contains a simple web application with two main components:
+## Setup
 
-1. **API**: Written in Laravel PHP, the API serves as the backend for the application and listens on port 8000.
-2. **Client**: Developed using Nuxt.js, the client is the frontend of the application and listens on port 3000.
+### Prerequisites
 
-### Environment Variables
+- Docker and Docker Compose installed on your machine.
 
-- **API Directory**: Take a look at the `.env` file in the API directory. It should contain the necessary credentials to connect to the database.
+### Clone the Repository
 
-  ```env
-    DB_CONNECTION=mysql
-    DB_HOST=db
-    DB_PORT=3306
-    DB_DATABASE=bookapi
-    DB_USERNAME=app
-    DB_PASSWORD=password
-  ```
+Clone the repository to your local machine:
 
-- **Client Directory**: Check the `.env` file in the Client directory. It should contain the connection string to connect to the API.
+```bash
+git clone https://github.com/Alia-lilo/challenge.git
+cd your-repository
 
-  ```env
-    VITE_API_URL=http://api:8000
-  ```
+
+
+FILES:
+-----------
+# Create a Dockerfile in the challenge/api directory
+# Create a Dockerfile in the challenge/client directory
+# Create/update a docker-compose.yml file at the root directory ~/Challenge
+# Create/update a nginx.conf file inside client/ directory
+# Create/update a default.conf file inside client/nginx directory
+
+
+
+COMMANDS:
+-----------
+# to build and start the services:
+     docker-compose up -d --build
+
+# To stop the application and remove containers:
+     docker-compose down
+
+# listing the running containers:
+     docker ps
+
+# check the logs of the services for errors:
+     docker-compose logs { db, api, client, or nginx}
+
+# restart 
+     docker-compose restart 'nginx'
+
+
+
+
+SCREENSHOTS:
+---------------
+
+- screenshot1 for running application.
+- screenshot3 for http://localhost " Welcome to nginx"
+- screenshot4 for Configuring the Nginx service to listen on port 443
+
+
+
+
+### Final Steps:
+
+- Commit changes to Git and push them to GitHub repository.
+- Verify that `README.md` file renders correctly on GitHub with all necessary instructions and screenshots.
+
+

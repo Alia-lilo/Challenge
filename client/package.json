@@ -4,11 +4,12 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "serve": "nuxt start"
+    "serve": "nuxt start",
+    "start": "nuxt start"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -17,3 +18,4 @@
     "vue-router": "^4.2.5"
   }
 }
+
