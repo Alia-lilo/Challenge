@@ -48,6 +48,11 @@ services:
       - client
       - api
 
+
+  # Include the client-specific configuration
+include:
+  - docker-compose.client.yml
+
 volumes:
   db_data:
 

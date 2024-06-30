@@ -56,11 +56,15 @@ SCREENSHOTS:
 - screenshot4 for Configuring the Nginx service to listen on port 443
 
 
-
+# Created two separate workflows (api.yml and client.yml) in the .github/workflows directory.
+Push Changes to the Main Branch
 
 ### Final Steps:
 
 - Commit changes to Git and push them to GitHub repository.
 - Verify that `README.md` file renders correctly on GitHub with all necessary instructions and screenshots.
 
+
+
+to push changes to GitHub repository: git push origin main
 
