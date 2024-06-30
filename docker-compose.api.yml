@@ -2,5 +2,8 @@ version: '3.8'
 
 services:
   api:
-    image: $DOCKERHUB_USERNAME/api:latest
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+
 
